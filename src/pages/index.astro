@@ -11,24 +11,46 @@ import {motion} from "framer-motion";
 		<div>
 			<motion.div initial={{opacity: 0}} viewport={{once: true}}
 						whileInView={{opacity: 1, transition:{duration: 1}}} client:only="react">
-				<Image src={pic} alt="Chiefe Kennedy Izuchukwu"/>
+				<Image src={pic} alt="Chiefe Kennedy Izuchukwu" loading={'eager'}/>
 			</motion.div>
 			<motion.h1 initial={{opacity: 0, y: 50}} viewport={{once: true}}
 					   whileInView={{opacity: 1, y: 0, transition:{delay: 1, duration: .5}}}
 					   client:only="react">Chiefe Kennedy Izuchukwu</motion.h1>
 		</div>
 
-		<div>
-			<motion.p initial={{opacity: 0, x: -100}} viewport={{once: true}}
-					  whileInView={{opacity: 1, x: 0, transition:{delay: 1, duration: 1}}} client:only="react">
-				I’m a young entrepreneur from Anambra, anambra east Nando By Emaegwana, Uvoke.
-				I’m a digital marketer and the CEO of <a class="underline" href="https://ckimarketing.vercel.app/" target="_blank">CKIMarketing</a>.
-				I have been in the marketing department for 6 years now and decided to start my own company .
-				I studied political science in Godfrey Okoye university Enugu. Marketing has always been a passion for me,
-				I believe selling something important to people is always an amazing feeling.
-				For me people don’t buy what you do , they buy why you do it .
-				I also believe in philanthropy and being of service to people.
-			</motion.p>
-		</div>
+		<motion.div initial={{opacity: 0, x: -100}} viewport={{once: true}}
+							   whileInView={{opacity: 1, x: 0, transition:{delay: 1, duration: 1}}} client:only="react">
+			<p>
+				Chiefe Kennedy Izuchukwu is a dynamic young entrepreneur from Nando, Anambra East,
+				who has made significant strides in the world of digital marketing.
+				As the CEO and founder of <a class="underline" href="https://ckimarketing.com" target="_blank">CKIMarketing</a>,
+				Kennedy has spent over six years honing his expertise in the industry, helping brands achieve impactful results
+				through cutting edge marketing strategies. With a background in Political Science from Godfrey Okoye University, Enugu,
+				he combines academic insight with practical marketing experience to create campaigns that resonate with people on a deeper level.
+			</p>
+			<p>
+				Kennedy believes that marketing is more than just selling products it’s about connecting with people’s emotions and motivations.
+				His mantra, “People don’t buy what you do, they buy why you do it,” speaks to his purpose driven approach to business.
+				His work is not only about achieving sales but also about providing meaningful solutions that make a difference in people’s lives.
+			</p>
+			<p>
+				Beyond his professional success, Kennedy is also a dedicated philanthropist with a passion for giving back to his community.
+				He is actively involved in initiatives that promote mental health awareness,
+				understanding the importance of supporting individuals who face mental health challenges.
+				His commitment to philanthropy reflects his belief in the power of service and making a positive impact in the lives of others.
+			</p>
+			<p>
+				As the director of CKIMarketing, Chiefe Kennedy Izuchukwu continues to push the boundaries of digital marketing while staying grounded in his values of empathy, service,
+				and purpose. He is not just a businessman but a leader who is committed to uplifting others both through his work and his philanthropic efforts.
+			</p>
+		</motion.div>
+
+
+		<motion.div initial={{opacity: 0}} viewport={{once: true}}
+					whileInView={{opacity: 1, transition:{duration: 1}}}
+					client:only="react" className="contacts">
+			<p>For all your marketing services</p>
+			<div>Call: <a href="tel:+2347039092819">+234-7039092819</a></div>
+		</motion.div>
 	</main>
 </Layout>

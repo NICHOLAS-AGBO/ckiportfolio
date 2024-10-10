@@ -9,7 +9,7 @@ body{
 }
 
 main{
-  @apply flex flex-col items-center justify-center px-5
+  @apply flex flex-col items-center justify-center px-3
   py-10 gap-y-5 mx-auto max-w-screen-sm lg:max-w-[800px] cursor-default;
 
   &>div:first-child{
@@ -17,5 +17,13 @@ main{
     img{ @apply max-w-56 mx-auto; }
     h1{ @apply font-black text-3xl sm:text-5xl mt-2; }
   }
-  p{ @apply text-justify sm:text-center text-lg text-white; }
+  p{ @apply text-justify text-lg text-white mb-3; }
+
+  .contacts{
+    div{
+      @apply text-lg text-black font-medium bg-[#ee9b60] px-5 py-3 rounded-3xl border border-gray-300 text-center;
+      a{ @apply font-bold hover:underline; }
+    }
+    p{ @apply text-center mb-3 text-gray-400; }
+  }
 }
